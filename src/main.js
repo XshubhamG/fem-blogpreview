@@ -1,4 +1,6 @@
 import "./style.css";
+import illustration from "/images/illustration-article.svg";
+import profileImg from "/images/image-avatar.webp";
 
 const date = new Date().toLocaleDateString("en-US", {
   year: "numeric",
@@ -10,7 +12,7 @@ document.querySelector("#app").innerHTML = `
   <main>
     <section class="card">
       <picture>
-        <img src="/images/illustration-article.svg" alt="Blog Post Image" class="banner-img" />
+        <img src="${illustration}" alt="Blog Post Image" class="banner-img" />
       </picture>
       <article>
         <h1 class="heading">HTML & CSS foundations</h1>
@@ -20,7 +22,7 @@ document.querySelector("#app").innerHTML = `
         <p class="date">Published ${date}</p>
         </div>
         <div class="profile">
-          <img src="/images/image-avatar.webp" alt="Profile Image" class="profile-img" />
+          <img src="${profileImg}" alt="Profile Image" class="profile-img" />
           <h2 class="profile-text">Greg Hopper</h2>
         </div>
       </article>
